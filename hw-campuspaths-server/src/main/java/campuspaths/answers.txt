@@ -1,0 +1,33 @@
+CSE 331 Homework Answers:
+
+Your Name: Johnson Kuang
+
+List any additional features or functionality you implemented
+in your CampusPaths application below. Only things listed here
+will be considered for extra credit.
+
+Additional features separated by UI features and additional functionality:
+
+UI features:
+- added a hideable bottom menu that is fixed at the bottom of the screen
+- added a navbar
+- added a home landing page with animations and documentation
+
+Additional Functionality:
+- added an email feature that emailed a text version of the path to the specified email
+    - includes email validation
+    - uses EmailJs
+
+Installed Libraries (React):
+    "bootstrap": "^4.4.1",
+    "framer": "^1.1.7",
+    "normalize.css": "^8.0.1",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-css-transition": "^0.7.4",
+    "react-icons": "^3.9.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "react-widgets": "^4.4.11"
+
+

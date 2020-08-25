@@ -1,0 +1,17 @@
+.background-enter {
+    transform: translate(0, -100);
+}
+
+.background-enter.background-enter-active {
+    transform: translate(0, 200px);
+    transition: transfomr 1000ms ease-in-out;
+}
+
+.background-leave {
+    transform: translate(0, 200px);
+}
+
+.background-leave.background-leave-active {
+    transform: translate(0, 0);
+    transition: transform 1000ms ease-in-out;
+}
