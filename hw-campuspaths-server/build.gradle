@@ -10,6 +10,5 @@ dependencies {
   implementation "com.sparkjava:spark-core:2.8.0"
   implementation "org.slf4j:slf4j-simple:1.7.21"
   implementation project(':hw-graph')
-  implementation project(':hw-marvel')
   implementation project(':hw-pathfinder')
 }

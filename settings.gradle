@@ -1,8 +1,5 @@
 rootProject.name = 'cse331'
 
-include 'hw-setup'
-include 'hw-poly'
 include 'hw-graph'
-include 'hw-marvel'
 include 'hw-pathfinder'
 include 'hw-campuspaths-server'
