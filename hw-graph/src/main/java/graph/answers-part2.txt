@@ -1,0 +1,39 @@
+Part 1:
+
+Question 1:
+    1. Adjacency list:
+            Advantage:
+                   - Space complexity is O(n) where n = # of vertices + # of edges
+            Disadvantage:
+                   - Removing vertices and edges is O(n)
+    2. Adjacency matrix:
+            Advantage:
+                   - constant time lookup of adjacency
+            Disadvantage:
+                   - O(n^2) space complexity in storing the graph
+    3. Collection of edges
+            Advantage:
+                   - Adding edges can be done with constant time
+            Disadvantage:
+                   - Isolated nodes are difficult to represent
+
+2. I chose the adjacency list because since it offers balanced performance in both searches and implementation ease.
+It is very easy to add edges and to search through the graph using an adjacency list.
+
+Part 4:
+Changes to the specification:
+    - several Graph operations were removed because of similar functionality.
+    - added getEdges() method to Node
+    - removed a Graph constructor that initialized the Graph based on a List of Nodes
+    - changed several parameters to Collections<> to code to interfaces
+    - added a method that returns a node based on the label for accessing specific nodes
+    - added additional operations to the Node class for getting the edges
+    - made DirectedEdge public for purpose of testing and iteration through DirectedEdges sets in nodes
+
+Changes to Tests:
+    - removed constructor tests
+    - changed tests to remove references to listNode() and listEdges() methods
+    - removed spec test that tests an empty constructor
+
+Implemented these changes based on feedback. They had no practical impact on the Graph
+ADT and would affect performance if left unchanged.

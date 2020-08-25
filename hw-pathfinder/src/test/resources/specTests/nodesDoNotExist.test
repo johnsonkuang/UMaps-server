@@ -1,0 +1,33 @@
+# tests whether graph identifies nodes not in the graph
+CreateGraph graph
+
+AddNode graph A
+AddNode graph B
+AddNode graph C
+AddNode graph D
+
+AddEdge graph A B 10
+AddEdge graph B A 10
+AddEdge graph B B 1
+AddEdge graph B C 1
+AddEdge graph C B 1
+AddEdge graph A C 20
+AddEdge graph C A 20
+AddEdge graph D A 5
+AddEdge graph D A 7
+AddEdge graph A D 5
+AddEdge graph A D 7
+AddEdge graph C D 3
+AddEdge graph D C 3
+
+ListNodes graph
+ListChildren graph A
+ListChildren graph B
+ListChildren graph C
+ListChildren graph D
+
+FindPath graph A F
+
+FindPath graph F A
+
+FindPath graph F G

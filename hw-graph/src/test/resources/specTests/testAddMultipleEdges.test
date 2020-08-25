@@ -1,0 +1,23 @@
+# Test Add Multiple Edges
+# tests the creation of multiple edge creations
+
+# Create a graph
+CreateGraph graph1
+
+# Add four nodes to the graph
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+
+# Add a edge connecting n1 and n2
+AddEdge graph1 n1 n2 A
+
+# Add a edge connecting n2 and n3
+AddEdge graph1 n2 n3 B
+
+# Add a edge connecting n2 and n4
+AddEdge graph1 n3 n4 C
+
+# Add a edge connecting n4 and n1
+AddEdge graph1 n4 n1 D

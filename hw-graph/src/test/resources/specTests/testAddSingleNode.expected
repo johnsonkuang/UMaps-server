@@ -1,0 +1,8 @@
+# Testing single nodes to the graph
+# Tests that a single node can be added to a created graph
+
+# Create a graph
+created graph graph1
+
+# Add a node
+added node n1 to graph1

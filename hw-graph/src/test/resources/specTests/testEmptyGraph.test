@@ -1,0 +1,8 @@
+# Test Empty Graph
+# Test whether ListNodes work with empty graphs
+
+# Create graph
+CreateGraph graph1
+
+# List its nodes
+ListNodes graph1

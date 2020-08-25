@@ -1,0 +1,20 @@
+# Test Add Multiple Edge to Same Parent
+# Tests whether a parent node can support multiple connections to different children
+
+# Create a Graph
+CreateGraph graph1
+
+# Add parent and children nodes
+AddNode graph1 parent
+AddNode graph1 child1
+AddNode graph1 child2
+AddNode graph1 child3
+AddNode graph1 child4
+AddNode graph1 child5
+
+# Add edges connecting parent and children
+AddEdge graph1 parent child1 A
+AddEdge graph1 parent child2 B
+AddEdge graph1 parent child3 C
+AddEdge graph1 parent child4 D
+AddEdge graph1 parent child5 E

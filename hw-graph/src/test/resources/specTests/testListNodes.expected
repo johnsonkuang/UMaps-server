@@ -1,0 +1,15 @@
+# Test Listing Nodes
+# Tests whether the graph can list their nodes
+
+# Create graph
+created graph graph1
+
+# Add nodes
+added node A to graph1
+added node B to graph1
+added node C to graph1
+added node D to graph1
+added node E to graph1
+
+# List the nodes
+graph1 contains: A B C D E

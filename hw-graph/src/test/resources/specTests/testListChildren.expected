@@ -1,0 +1,23 @@
+# Test ListChildren method
+# Test whether a graph can list the children of a parent node
+
+# Create graph
+created graph graph1
+
+# Add parent and children nodes
+added node parent to graph1
+added node A to graph1
+added node B to graph1
+added node C to graph1
+added node D to graph1
+added node E to graph1
+
+# Add edges between parent and all other nodes
+added edge e1 from parent to A in graph1
+added edge e2 from parent to B in graph1
+added edge e3 from parent to C in graph1
+added edge e4 from parent to D in graph1
+added edge e5 from parent to E in graph1
+
+# List children of parent
+the children of parent in graph1 are: A(e1) B(e2) C(e3) D(e4) E(e5)
