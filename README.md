@@ -1,58 +1,61 @@
 # UMaps-server
 
-A Java Spark server that takes API calls and returns path information. 
+A Java Spark server that takes API calls containing start and destination points and returns information on the shortest path as a JSON response.
 
 ## Getting Started
 
-Pull the repository with 
-```
-git clone https://github.com/johnsonkuang/UMaps-server
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Java 11
+Gradle
 ```
+Best run on the [IntelliJ Ultimate IDE](https://www.jetbrains.com/idea/) by JetBrains
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+1. Pull the repository
 
 ```
-Give the example
+git clone https://github.com/johnsonkuang/UMaps-server.git
 ```
 
-And repeat
+2. Open the root directory in IntelliJ.
 
+3. Test whether the system has been installed properly by running the gradle task
 ```
-until finished
+gradle hw-campuspaths-server:runSpark
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+You should see the following output in red:
+```
+[main] INFO CampusPaths Server - Listening on: http://localhost:4567
+[Thread-0] INFO org.eclipse.jetty.util.log - Logging initialized @282ms to org.eclipse.jetty.util.log.Slf4jLog
+[Thread-0] WARN org.eclipse.jetty.server.AbstractConnector - Ignoring deprecated socket close linger time
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+[Thread-0] INFO org.eclipse.jetty.server.Server - jetty-9.4.12.v20180830; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 11.0.6+8-LTS
+[Thread-0] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-0] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-0] INFO org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+[Thread-0] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@3dad26bd{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-0] INFO org.eclipse.jetty.server.Server - Started @1033ms
+```
+
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+There are automated tests provided for both the supplemental packages: `graph` and `pathfinder`
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+To run tests, execute the following command:
 ```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+gradle hw-<replace with graph or pathfinder>:test
 ```
 
 ## Deployment
